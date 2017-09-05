@@ -1,0 +1,27 @@
+page-main {
+.myview{
+    background-attachment: fixed;
+    background-image: url("http://www.nexus5wallpapers.com/wp-content/uploads/Background/Simple%20Background%20Nexus%205%20Wallpapers%20HD%20285.jpg");
+}
+.card-background-page {
+    
+      ion-card {
+        position: relative;
+        text-align: center;
+        background-color: rgba(0,0,0,0.2);
+        
+      }
+    
+      .card-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #fff;
+      }
+    
+      .card-subtitle {
+        font-size: 0.8em;
+        color: #fff;
+      }
+    
+    }
+}

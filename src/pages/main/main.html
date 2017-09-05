@@ -1,0 +1,57 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+    
+    <ion-buttons end>
+      <button  (click)="refresh()">refresh</button>
+  </ion-buttons>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content  no-padding class="card-background-page">
+<ion-item  no-lines *ngFor="let item of items | async" class="myview">
+  <ion-card >
+       <ion-item style=" background-color: transparent !important;">
+        <ion-avatar item-start>
+          <img src="https://i.pinimg.com/736x/ea/3d/cf/ea3dcff8ed8e8939d98c96b81f747623--happy-faces-smiley-faces.jpg">
+        </ion-avatar>
+        <h2 class="card-title">{{item.title}}</h2>
+        <p class="card-subtitle">{{item.date | date:"MM/dd/yyyy 'at' h:mma"}}</p>
+      </ion-item>
+      <!--img src="img/advance-card-bttf.png"-->
+      <ion-card-content>
+        <p class="card-subtitle">{{item.body}}</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div class="card-subtitle">12 Likes</div>
+          </button>
+        </ion-col>
+        <!--ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col-->
+        <!--ion-col cent--er text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col-->
+      </ion-row>
+    </ion-card>
+</ion-item>
+</ion-content>
